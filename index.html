@@ -137,7 +137,8 @@
                     <button onclick="openTitipJualModal()" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-brand-300 border border-brand-500/30 text-xs font-semibold transition-all">
                         <i data-lucide="plus-circle" class="w-4 h-4"></i> Titip Jual Akun
                     </button>
-                    <a href="https://wa.me/6285117798661?text=Halo%20Admin%20Alif%20Cimol,%20saya%20butuh%20bantuan%20transaksi" target="_blank" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-fuchsia-600 hover:from-brand-500 hover:to-fuchsia-500 text-white font-semibold text-xs purple-glow-sm transition-all transform hover:-translate-y-0.5">
+                    <!-- FIXED LINK WA CS HEADER -->
+                    <a href="https://api.whatsapp.com/send?phone=6285117798661&text=Halo%20Admin%20Alif%20Cimol,%20saya%20butuh%20bantuan%20transaksi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-fuchsia-600 hover:from-brand-500 hover:to-fuchsia-500 text-white font-semibold text-xs purple-glow-sm transition-all transform hover:-translate-y-0.5">
                         <i data-lucide="message-square" class="w-4 h-4"></i>
                         <span>CS WhatsApp</span>
                     </a>
@@ -184,7 +185,6 @@
 
         <!-- HERO BANNER SECTION -->
         <section class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-brand-950 via-slate-900 to-purple-950 border border-brand-500/30 p-6 sm:p-10 lg:p-12 shadow-2xl">
-            <!-- Background Glow Decor -->
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-fuchsia-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -201,7 +201,6 @@
                         Selamat datang di <strong class="text-white">Alif Cimol Store</strong>. Layanan pengisian voucher game kilat 100% legal, instan otomatis 24/7, serta Rekber FJB Akun Sultan bergaransi anti hackback.
                     </p>
 
-                    <!-- Fast Feature Highlights -->
                     <div class="grid grid-cols-3 gap-3 pt-2">
                         <div class="p-3 rounded-2xl bg-slate-900/60 border border-brand-500/20 backdrop-blur-md text-center">
                             <i data-lucide="zap" class="w-6 h-6 text-yellow-400 mx-auto mb-1"></i>
@@ -263,7 +262,6 @@
 
             <!-- Game Cards Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6" id="game-grid">
-                <!-- Javascript dynamically renders game items or initial markup provided below -->
             </div>
         </section>
 
@@ -289,7 +287,6 @@
 
             <!-- Account Cards Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="account-grid">
-                <!-- Rendered by JS -->
             </div>
         </section>
 
@@ -311,16 +308,13 @@
                     </button>
                 </div>
 
-                <!-- Dynamic Search Result Display Area -->
                 <div id="invoice-result-card" class="hidden text-left bg-slate-900/80 border border-brand-500/30 rounded-2xl p-6 mt-6 space-y-4">
-                    <!-- Populated via JS -->
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONI & FAQ SECTION -->
         <section id="testimoni" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <!-- Testimoni Column -->
             <div class="lg:col-span-6 space-y-6">
                 <div>
                     <div class="text-brand-400 text-xs font-bold uppercase tracking-wider flex items-center gap-2">
@@ -380,7 +374,6 @@
                 </div>
             </div>
 
-            <!-- FAQ Accordion Column -->
             <div class="lg:col-span-6 space-y-6">
                 <div>
                     <div class="text-fuchsia-400 text-xs font-bold uppercase tracking-wider flex items-center gap-2">
@@ -460,7 +453,8 @@
             <div>
                 <div class="font-bold text-white mb-3 text-sm">Bantuan & Kontak</div>
                 <ul class="space-y-2">
-                    <li><a href="https://wa.me/6285117798661" target="_blank" class="hover:text-brand-300 flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5"></i> WhatsApp CS Admin</a></li>
+                    <!-- FIXED LINK WA FOOTER -->
+                    <li><a href="https://api.whatsapp.com/send?phone=6285117798661" target="_blank" rel="noopener noreferrer" class="hover:text-brand-300 flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5"></i> WhatsApp CS Admin</a></li>
                     <li><a href="#testimoni" class="hover:text-brand-300">Syarat & Ketentuan</a></li>
                     <li><a href="#testimoni" class="hover:text-brand-300">Kebijakan Privasi</a></li>
                 </ul>
@@ -474,15 +468,13 @@
 
     <!-- ==================== MODALS SECTION ==================== -->
 
-    <!-- 1. TOP UP MODAL / DRAWER -->
+    <!-- 1. TOP UP MODAL -->
     <div id="topup-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
         <div class="bg-cardbg border border-brand-500/30 rounded-3xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative shadow-2xl space-y-6 p-6 sm:p-8">
-            <!-- Modal Close Button -->
-            <button onclick="closeTopupModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700">
+            <button onclick="closeTopupModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
 
-            <!-- Game Header Info -->
             <div class="flex items-center gap-4 border-b border-brand-500/20 pb-4">
                 <div class="w-16 h-16 rounded-2xl overflow-hidden border border-brand-500/40 shrink-0 bg-gradient-to-br from-brand-950 via-slate-900 to-purple-950 p-2 flex items-center justify-center">
                     <img id="modal-game-img" src="" alt="Game Logo" class="w-full h-full object-contain filter drop-shadow">
@@ -514,7 +506,6 @@
                     Pilih Nominal Item
                 </label>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" id="nominal-grid">
-                    <!-- Dynamic Nominals rendered by JS -->
                 </div>
             </div>
 
@@ -573,7 +564,6 @@
                 </div>
             </div>
 
-            <!-- Submit Order Button -->
             <button onclick="processOrder()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-purple-600 to-fuchsia-600 hover:from-brand-500 hover:to-fuchsia-500 text-white font-bold text-sm purple-glow transition-all flex items-center justify-center gap-2">
                 <i data-lucide="shopping-bag" class="w-4 h-4"></i>
                 <span>BAYAR SEKARANG</span>
@@ -596,13 +586,11 @@
                 <p class="text-xs text-slate-400">Selesaikan pembayaran sebelum batas waktu berakhir</p>
             </div>
 
-            <!-- Timer Countdown -->
             <div class="bg-slate-900/90 border border-brand-500/20 rounded-2xl p-3">
                 <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Batas Waktu Bayar</div>
                 <div id="payment-timer" class="text-2xl font-black text-brand-400 font-mono tracking-widest mt-0.5">14:59</div>
             </div>
 
-            <!-- Invoice Code -->
             <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-brand-500/30 text-xs">
                 <span class="text-slate-400">Kode Invoice:</span>
                 <div class="flex items-center gap-2 font-mono font-bold text-white">
@@ -613,13 +601,11 @@
                 </div>
             </div>
 
-            <!-- QRIS Code Image Box -->
             <div class="p-4 bg-white rounded-2xl inline-block border-4 border-brand-600 shadow-xl">
                 <img id="qris-img" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ALIF-CIMOL-STORE-QRIS-PAYMENT" alt="QRIS Code" class="w-48 h-48 mx-auto">
                 <div class="text-[10px] font-bold text-slate-800 mt-2">QRIS ALL PAYMENT (SCAN VIA DANA/GOPAY/OVO/BANK)</div>
             </div>
 
-            <!-- Summary Breakdown -->
             <div class="text-left text-xs bg-slate-900/80 p-4 rounded-xl space-y-1.5 border border-brand-500/20">
                 <div class="flex justify-between"><span class="text-slate-400">Item:</span><span id="inv-item-name" class="font-bold text-white">-</span></div>
                 <div class="flex justify-between"><span class="text-slate-400">User ID:</span><span id="inv-user-id" class="font-bold text-white">-</span></div>
@@ -627,8 +613,8 @@
                 <div class="flex justify-between text-sm pt-2 border-t border-brand-500/20"><span class="font-bold text-white">Total Bayar:</span><span id="inv-total-price" class="font-extrabold text-brand-400 text-base">-</span></div>
             </div>
 
-            <!-- Confirmation WhatsApp Button -->
-            <a id="wa-confirm-btn" href="#" target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all">
+            <!-- FIXED LINK WA INVOICE MODAL -->
+            <a id="wa-confirm-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all">
                 <i data-lucide="message-square" class="w-4 h-4"></i>
                 <span>Konfirmasi Pembayaran via WA Admin</span>
             </a>
@@ -642,7 +628,6 @@
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
 
-            <!-- Account Banner -->
             <div class="space-y-4">
                 <div class="aspect-video rounded-2xl overflow-hidden bg-slate-900 border border-brand-500/30 relative">
                     <img id="acc-detail-img" src="" alt="Account Preview" class="w-full h-full object-cover">
@@ -660,15 +645,12 @@
                 </div>
             </div>
 
-            <!-- Specs Grid -->
             <div class="space-y-2">
                 <div class="text-xs font-bold text-slate-200 uppercase tracking-wider">Spesifikasi Akun & Inventory:</div>
                 <div class="bg-slate-900/90 border border-brand-500/20 rounded-2xl p-4 text-xs text-slate-300 space-y-2" id="acc-detail-specs">
-                    <!-- Dynamic Specs -->
                 </div>
             </div>
 
-            <!-- Garansi Rekber Badge -->
             <div class="p-4 rounded-2xl bg-brand-950/60 border border-brand-500/30 flex items-start gap-3">
                 <i data-lucide="shield-check" class="w-6 h-6 text-brand-400 shrink-0 mt-0.5"></i>
                 <div class="text-xs">
@@ -677,8 +659,8 @@
                 </div>
             </div>
 
-            <!-- WhatsApp Direct Buy Button -->
-            <a id="acc-buy-wa-btn" href="#" target="_blank" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-fuchsia-600 hover:from-brand-500 hover:to-fuchsia-500 text-white font-bold text-sm flex items-center justify-center gap-2 purple-glow transition-all">
+            <!-- FIXED LINK WA BUY ACCOUNT -->
+            <a id="acc-buy-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-fuchsia-600 hover:from-brand-500 hover:to-fuchsia-500 text-white font-bold text-sm flex items-center justify-center gap-2 purple-glow transition-all">
                 <i data-lucide="shopping-cart" class="w-4 h-4"></i>
                 <span>Beli Akun Ini via WA Admin Alif</span>
             </a>
@@ -686,566 +668,4 @@
     </div>
 
     <!-- 4. MODAL TITIP JUAL AKUN -->
-    <div id="titip-jual-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-cardbg border border-brand-500/40 rounded-3xl w-full max-w-lg p-6 sm:p-8 space-y-5 relative shadow-2xl max-h-[90vh] overflow-y-auto">
-            <button onclick="closeTitipJualModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-
-            <div class="text-center">
-                <div class="w-12 h-12 rounded-2xl bg-brand-600/20 border border-brand-500/30 flex items-center justify-center mx-auto text-brand-400 mb-2">
-                    <i data-lucide="plus-circle" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-xl font-extrabold text-white">Form Titip Jual Akun</h3>
-                <p class="text-xs text-slate-400">Jual akun game kamu dengan aman melalui Rekber Alif Cimol</p>
-            </div>
-
-            <form onsubmit="handleTitipJualSubmit(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Nama Penjual / WhatsApp</label>
-                    <input type="text" required placeholder="08123456789" class="w-full bg-slate-900 border border-brand-500/30 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Pilih Game</label>
-                    <select required class="w-full bg-slate-900 border border-brand-500/30 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-500">
-                        <option value="Mobile Legends">Mobile Legends</option>
-                        <option value="Free Fire">Free Fire</option>
-                        <option value="Genshin Impact">Genshin Impact</option>
-                        <option value="Valorant">Valorant</option>
-                        <option value="Lainnya">Lainnya</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Judul / Highlights Akun</label>
-                    <input type="text" required placeholder="cth: MLBB Mythic Immortal Skin Legend 350+" class="w-full bg-slate-900 border border-brand-500/30 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Detail Rincian Akun (Hero, Skin, Winrate, DLL)</label>
-                    <textarea rows="3" required placeholder="Tuliskan spesifikasi lengkap..." class="w-full bg-slate-900 border border-brand-500/30 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-500"></textarea>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-300 mb-1">Harga yang Diinginkan (Rp)</label>
-                    <input type="number" required placeholder="cth: 1500000" class="w-full bg-slate-900 border border-brand-500/30 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-brand-500">
-                </div>
-
-                <button type="submit" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs purple-glow transition-all">
-                    Kirim Formulir ke Admin WA
-                </button>
-            </form>
-        </div>
-    </div>
-
-
-    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Mobile Menu Toggle Logic
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-
-        // ================= TOAST NOTIFICATION SYSTEM =================
-        function showToast(message, type = 'info') {
-            const container = document.getElementById('toast-container');
-            const toast = document.createElement('div');
-            
-            let bgBg = 'bg-brand-900/90 border-brand-500';
-            if (type === 'success') bgBg = 'bg-emerald-950/90 border-emerald-500';
-            if (type === 'warning') bgBg = 'bg-amber-950/90 border-amber-500';
-
-            toast.className = `pointer-events-auto flex items-center gap-3 p-3.5 rounded-xl border ${bgBg} text-white shadow-xl backdrop-blur-md transition-all duration-300 transform translate-x-10 opacity-0 text-xs font-semibold`;
-            toast.innerHTML = `
-                <i data-lucide="info" class="w-4 h-4 text-brand-300 shrink-0"></i>
-                <span>${message}</span>
-            `;
-
-            container.appendChild(toast);
-            lucide.createIcons();
-
-            setTimeout(() => {
-                toast.classList.remove('translate-x-10', 'opacity-0');
-            }, 10);
-
-            setTimeout(() => {
-                toast.classList.add('translate-x-10', 'opacity-0');
-                setTimeout(() => toast.remove(), 300);
-            }, 3500);
-        }
-
-        // ================= GAME DATA & CATALOG (OFFICIAL GAME LOGOS) =================
-        const gamesData = [
-            {
-                id: 'mlbb',
-                title: 'Mobile Legends',
-                publisher: 'Moonton',
-                category: 'MOBA',
-                img: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Mobile_Legends_Bang_Bang_logo.png/555px-Mobile_Legends_Bang_Bang_logo.png',
-                bgGradient: 'from-amber-950/70 via-purple-950/80 to-slate-900',
-                nominals: [
-                    { id: 'ml-86', name: '86 Diamonds', price: 20000 },
-                    { id: 'ml-172', name: '172 Diamonds', price: 40000 },
-                    { id: 'ml-pass', name: 'Weekly Diamond Pass', price: 28000, tag: 'Best Seller' },
-                    { id: 'ml-starlight', name: 'Starlight Member', price: 135000 },
-                    { id: 'ml-706', name: '706 Diamonds', price: 160000 },
-                    { id: 'ml-2195', name: '2195 Diamonds', price: 480000 }
-                ]
-            },
-            {
-                id: 'ff',
-                title: 'Free Fire',
-                publisher: 'Garena',
-                category: 'Battle Royale',
-                img: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Logo_of_Garena_Free_Fire.png/640px-Logo_of_Garena_Free_Fire.png',
-                bgGradient: 'from-orange-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'ff-140', name: '140 Diamonds', price: 19000 },
-                    { id: 'ff-355', name: '355 Diamonds', price: 46000, tag: 'Populer' },
-                    { id: 'ff-720', name: '720 Diamonds', price: 92000 },
-                    { id: 'ff-weekly', name: 'Membership Mingguan', price: 30000 }
-                ]
-            },
-            {
-                id: 'pubg',
-                title: 'PUBG Mobile',
-                publisher: 'Tencent Games',
-                category: 'Battle Royale',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/PUBG_Mobile_simple_logo_black.png/600px-PUBG_Mobile_simple_logo_black.png',
-                bgGradient: 'from-yellow-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'pubg-60', name: '60 UC', price: 14500 },
-                    { id: 'pubg-325', name: '325 UC', price: 72000 },
-                    { id: 'pubg-660', name: '660 UC', price: 142000 },
-                    { id: 'pubg-rp', name: 'Royale Pass', price: 150000 }
-                ]
-            },
-            {
-                id: 'genshin',
-                title: 'Genshin Impact',
-                publisher: 'HoYoverse',
-                category: 'RPG',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Genshin_Impact_wordmark.svg/640px-Genshin_Impact_wordmark.svg.png',
-                bgGradient: 'from-indigo-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'gi-welkin', name: 'Blessing of Welkin Moon', price: 62000, tag: 'Recomended' },
-                    { id: 'gi-300', name: '300 Genesis Crystals', price: 62000 },
-                    { id: 'gi-980', name: '980 Genesis Crystals', price: 210000 },
-                    { id: 'gi-1980', name: '1980 Genesis Crystals', price: 420000 }
-                ]
-            },
-            {
-                id: 'valorant',
-                title: 'Valorant',
-                publisher: 'Riot Games',
-                category: 'FPS',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_meaning_and_history.png/600px-Valorant_logo_-_meaning_and_history.png',
-                bgGradient: 'from-red-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'val-300', name: '300 VP', price: 32000 },
-                    { id: 'val-625', name: '625 VP', price: 65000 },
-                    { id: 'val-1125', name: '1125 VP', price: 115000 },
-                    { id: 'val-2400', name: '2400 VP', price: 235000 }
-                ]
-            },
-            {
-                id: 'hok',
-                title: 'Honor of Kings',
-                publisher: 'Level Infinite',
-                category: 'MOBA',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Honor_of_Kings_Wordmark_Logo.png/640px-Honor_of_Kings_Wordmark_Logo.png',
-                bgGradient: 'from-blue-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'hok-80', name: '80 Tokens', price: 15000 },
-                    { id: 'hok-240', name: '240 Tokens', price: 45000 },
-                    { id: 'hok-400', name: '400 Tokens', price: 75000 }
-                ]
-            },
-            {
-                id: 'roblox',
-                title: 'Roblox',
-                publisher: 'Roblox Corp',
-                category: 'Sandbox',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roblox_player_icon_2022.svg/600px-Roblox_player_icon_2022.svg.png',
-                bgGradient: 'from-neutral-900 via-purple-950/80 to-slate-900',
-                nominals: [
-                    { id: 'rblx-80', name: '80 Robux', price: 16000 },
-                    { id: 'rblx-400', name: '400 Robux', price: 75000 },
-                    { id: 'rblx-800', name: '800 Robux', price: 145000 }
-                ]
-            },
-            {
-                id: 'fcmobile',
-                title: 'FC Mobile',
-                publisher: 'EA Sports',
-                category: 'Sports',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/EA_Sports_FC_logo.svg/600px-EA_Sports_FC_logo.svg.png',
-                bgGradient: 'from-emerald-950/70 via-slate-900 to-purple-950/80',
-                nominals: [
-                    { id: 'fc-100', name: '100 FC Points', price: 16000 },
-                    { id: 'fc-520', name: '520 FC Points', price: 78000 }
-                ]
-            }
-        ];
-
-        // Render Game Cards
-        function renderGames() {
-            const grid = document.getElementById('game-grid');
-            grid.innerHTML = gamesData.map(game => `
-                <div onclick="openTopupModal('${game.id}')" class="group relative bg-cardbg border border-brand-500/20 rounded-2xl p-3 sm:p-4 hover:border-brand-500 hover:bg-cardhover transition-all duration-300 cursor-pointer flex flex-col justify-between hover:-translate-y-1">
-                    <div class="space-y-3">
-                        <div class="aspect-square rounded-xl overflow-hidden bg-gradient-to-br ${game.bgGradient || 'from-brand-950 via-slate-900 to-purple-950'} border border-brand-500/30 p-4 relative flex items-center justify-center">
-                            <img src="${game.img}" alt="${game.title} Logo" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 filter drop-shadow-[0_4px_12px_rgba(139,92,246,0.35)]" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1e1b4b/a78bfa?text=${encodeURIComponent(game.title)}'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-darkbg/80 via-transparent to-transparent pointer-events-none"></div>
-                            <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-brand-950/90 text-brand-300 text-[10px] font-bold border border-brand-500/30">
-                                ${game.category}
-                            </span>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-white text-sm sm:text-base group-hover:text-brand-300 transition-colors">${game.title}</h3>
-                            <p class="text-[11px] text-slate-400">${game.publisher}</p>
-                        </div>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-brand-500/10 flex items-center justify-between text-xs text-brand-400 font-semibold">
-                        <span>Top Up</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                    </div>
-                </div>
-            `).join('');
-            lucide.createIcons();
-        }
-
-        // ================= MARKETPLACE ACCOUNTS DATA =================
-        const accountsData = [
-            {
-                id: 'ACC-MLBB-01',
-                gameCategory: 'MLBB',
-                title: 'MLBB Mythic Immortal 100+ Star | 350+ Skins | Legend & Collector',
-                price: 2450000,
-                img: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Mobile_Legends_Bang_Bang_logo.png/555px-Mobile_Legends_Bang_Bang_logo.png',
-                bgGradient: 'from-amber-950/70 via-purple-950/90 to-slate-900',
-                specs: [
-                    'Hero Total: 124 (Max Complete)',
-                    'Skin Total: 368 (Collector Gusion, Legend Granger, Prime Beatrix)',
-                    'Winrate Overall: 68.5% (Mantap Pro)',
-                    'Emblem Level: ALL MAX Level 60',
-                    'Status Bind: Monsep Unbind All (Garansi Anti-HB 100%)'
-                ]
-            },
-            {
-                id: 'ACC-FF-02',
-                gameCategory: 'FF',
-                title: 'Free Fire Vault Sultan | SG2 Kayu + M1887 One Punch Man | Old HipHop',
-                price: 850000,
-                img: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Logo_of_Garena_Free_Fire.png/640px-Logo_of_Garena_Free_Fire.png',
-                bgGradient: 'from-orange-950/70 via-slate-900 to-purple-950/90',
-                specs: [
-                    'Level Akun: 72 (Set Sultan Old)',
-                    'Vault Collection: Bundle HipHop, SG2 Incubator, Katana Dual',
-                    'Diamond Sisa: 450 DM Ready',
-                    'Status Bind: Login FB Unbind / Siap Amankan'
-                ]
-            },
-            {
-                id: 'ACC-GI-03',
-                gameCategory: 'GENSHIN',
-                title: 'Genshin Impact AR 58 | 24x Character 5★ | C2 Raiden Shogun + Signature',
-                price: 1600000,
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Genshin_Impact_wordmark.svg/640px-Genshin_Impact_wordmark.svg.png',
-                bgGradient: 'from-indigo-950/70 via-slate-900 to-purple-950/90',
-                specs: [
-                    'Adventure Rank: AR 58 (Server Asia)',
-                    'Karakter Bintang 5: Raiden C2, Nahida, Kazuha, Yelan, Hu Tao, Zhongli',
-                    'Weapon 5★: Engulfing Lightning, Staff of Homa, Aqua Simulacra',
-                    'Pity Banner: Rate On Pity 65',
-                    'Status Bind: Username Set, Email Changeable Direct'
-                ]
-            },
-            {
-                id: 'ACC-VAL-04',
-                gameCategory: 'VALORANT',
-                title: 'Valorant Radiant Peak | Vandal Prime & Reaver | Knife Karambit RGX',
-                price: 1150000,
-                img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_meaning_and_history.png/600px-Valorant_logo_-_meaning_and_history.png',
-                bgGradient: 'from-red-950/70 via-slate-900 to-purple-950/90',
-                specs: [
-                    'Rank Current: Ascendant 3 (Peak Radiant)',
-                    'Skins Vandal: Prime, Reaver, Kuronami',
-                    'Skins Melee: RGX Karambit, Reaver Dagger',
-                    'VP & Radianite: 450 VP / 120 RP',
-                    'Status: Full Access Change Email ON'
-                ]
-            }
-        ];
-
-        function renderAccounts(filter = 'ALL') {
-            const grid = document.getElementById('account-grid');
-            const filtered = filter === 'ALL' ? accountsData : accountsData.filter(a => a.gameCategory === filter);
-
-            grid.innerHTML = filtered.map(acc => `
-                <div class="bg-cardbg border border-brand-500/20 rounded-2xl overflow-hidden hover:border-brand-500 transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="aspect-video relative overflow-hidden bg-gradient-to-br ${acc.bgGradient || 'from-brand-950 via-slate-900 to-purple-950'} border-b border-brand-500/20 p-4 flex items-center justify-center">
-                            <img src="${acc.img}" alt="${acc.title}" class="w-full h-full object-contain filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" onerror="this.onerror=null; this.src='https://placehold.co/600x350/1e1b4b/a78bfa?text=${encodeURIComponent(acc.gameCategory)}'">
-                            <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-brand-600/90 text-white text-[10px] font-bold shadow border border-brand-400/30">
-                                ${acc.gameCategory}
-                            </span>
-                            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 backdrop-blur text-emerald-400 text-[10px] font-bold border border-emerald-500/30">
-                                Verified FJB
-                            </span>
-                        </div>
-                        <div class="p-4 space-y-2">
-                            <h4 class="font-bold text-white text-xs sm:text-sm line-clamp-2 leading-snug">${acc.title}</h4>
-                            <div class="text-brand-400 font-extrabold text-lg">Rp ${acc.price.toLocaleString('id-ID')}</div>
-                        </div>
-                    </div>
-                    <div class="p-4 pt-0">
-                        <button onclick="openAccountDetailModal('${acc.id}')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-brand-600 text-slate-200 hover:text-white font-bold text-xs transition-all flex items-center justify-center gap-1.5">
-                            <i data-lucide="eye" class="w-3.5 h-3.5"></i> Lihat Detail Akun
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-            lucide.createIcons();
-        }
-
-        function filterAccount(category) {
-            document.querySelectorAll('.account-filter-btn').forEach(btn => {
-                if (btn.dataset.category === category) {
-                    btn.className = "account-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 text-white";
-                } else {
-                    btn.className = "account-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700";
-                }
-            });
-            renderAccounts(category);
-        }
-
-        // ================= TOP UP MODAL STATE & HANDLERS =================
-        let currentSelectedGame = null;
-        let selectedNominal = null;
-        let selectedPayment = null;
-        let adminFee = 0;
-
-        function openTopupModal(gameId) {
-            currentSelectedGame = gamesData.find(g => g.id === gameId);
-            if (!currentSelectedGame) return;
-
-            document.getElementById('modal-game-img').src = currentSelectedGame.img;
-            document.getElementById('modal-game-title').innerText = currentSelectedGame.title;
-            document.getElementById('modal-game-publisher').innerText = currentSelectedGame.publisher;
-
-            // Render Nominals
-            const nominalGrid = document.getElementById('nominal-grid');
-            nominalGrid.innerHTML = currentSelectedGame.nominals.map(n => `
-                <div onclick="selectNominal('${n.id}', ${n.price}, '${n.name}')" class="nominal-card border border-brand-500/20 bg-slate-900/80 p-3 rounded-xl cursor-pointer hover:border-brand-500 transition-all flex flex-col justify-between" data-nominal="${n.id}">
-                    <div>
-                        <div class="font-bold text-xs text-white">${n.name}</div>
-                        ${n.tag ? `<span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-300 text-[9px] font-bold border border-fuchsia-500/30">${n.tag}</span>` : ''}
-                    </div>
-                    <div class="text-xs font-semibold text-brand-300 mt-2">Rp ${n.price.toLocaleString('id-ID')}</div>
-                </div>
-            `).join('');
-
-            // Reset state
-            selectedNominal = null;
-            selectedPayment = null;
-            adminFee = 0;
-            updateSummary();
-
-            document.getElementById('topup-modal').classList.remove('hidden');
-        }
-
-        function closeTopupModal() {
-            document.getElementById('topup-modal').classList.add('hidden');
-        }
-
-        function selectNominal(id, price, name) {
-            selectedNominal = { id, price, name };
-            document.querySelectorAll('.nominal-card').forEach(card => {
-                if (card.dataset.nominal === id) {
-                    card.classList.add('border-brand-500', 'bg-brand-950/60', 'ring-1', 'ring-brand-500');
-                } else {
-                    card.classList.remove('border-brand-500', 'bg-brand-950/60', 'ring-1', 'ring-brand-500');
-                }
-            });
-            updateSummary();
-            showToast(`Item ${name} dipilih`, 'info');
-        }
-
-        function selectPayment(paymentId, fee) {
-            selectedPayment = paymentId;
-            adminFee = fee;
-            document.querySelectorAll('.payment-card').forEach(card => {
-                if (card.dataset.payment === paymentId) {
-                    card.classList.add('border-brand-500', 'bg-brand-950/60', 'ring-1', 'ring-brand-500');
-                } else {
-                    card.classList.remove('border-brand-500', 'bg-brand-950/60', 'ring-1', 'ring-brand-500');
-                }
-            });
-            updateSummary();
-            showToast(`Metode ${paymentId} dipilih`, 'info');
-        }
-
-        function updateSummary() {
-            const price = selectedNominal ? selectedNominal.price : 0;
-            const total = price + (selectedPayment ? adminFee : 0);
-
-            document.getElementById('summary-price').innerText = `Rp ${price.toLocaleString('id-ID')}`;
-            document.getElementById('summary-fee').innerText = `Rp ${adminFee.toLocaleString('id-ID')}`;
-            document.getElementById('summary-total').innerText = `Rp ${total.toLocaleString('id-ID')}`;
-        }
-
-        function processOrder() {
-            const userId = document.getElementById('user-id-input').value.trim();
-            const zoneId = document.getElementById('zone-id-input').value.trim();
-            const waNum = document.getElementById('wa-number-input').value.trim();
-
-            if (!userId) {
-                showToast('Harap isi User ID Game kamu!', 'warning');
-                return;
-            }
-            if (!selectedNominal) {
-                showToast('Harap pilih nominal top up!', 'warning');
-                return;
-            }
-            if (!selectedPayment) {
-                showToast('Harap pilih metode pembayaran!', 'warning');
-                return;
-            }
-
-            // Generate Random Invoice Code
-            const invCode = 'INV-ALIF-' + Math.floor(10000 + Math.random() * 90000);
-            const totalBayar = selectedNominal.price + adminFee;
-
-            // Fill Invoice Modal
-            document.getElementById('inv-code-display').innerText = invCode;
-            document.getElementById('inv-item-name').innerText = `${currentSelectedGame.title} - ${selectedNominal.name}`;
-            document.getElementById('inv-user-id').innerText = `${userId} ${zoneId ? '('+zoneId+')' : ''}`;
-            document.getElementById('inv-method').innerText = selectedPayment;
-            document.getElementById('inv-total-price').innerText = `Rp ${totalBayar.toLocaleString('id-ID')}`;
-
-            // WA Redirect Link
-            const waMsg = `Halo Admin Alif Cimol Store! Saya sudah order:\n\n*Invoice:* ${invCode}\n*Game:* ${currentSelectedGame.title}\n*Item:* ${selectedNominal.name}\n*User ID:* ${userId} ${zoneId ? '('+zoneId+')' : ''}\n*Metode:* ${selectedPayment}\n*Total:* Rp ${totalBayar.toLocaleString('id-ID')}\n\nMohon diproses min, terima kasih!`;
-            document.getElementById('wa-confirm-btn').href = `https://wa.me/6285117798661?text=${encodeURIComponent(waMsg)}`;
-
-            closeTopupModal();
-            document.getElementById('invoice-modal').classList.remove('hidden');
-            startInvoiceTimer();
-            showToast('Invoice berhasil dibuat!', 'success');
-        }
-
-        function closeInvoiceModal() {
-            document.getElementById('invoice-modal').classList.add('hidden');
-        }
-
-        let timerInterval = null;
-        function startInvoiceTimer() {
-            let seconds = 15 * 60; // 15 Minutes
-            const timerEl = document.getElementById('payment-timer');
-            if (timerInterval) clearInterval(timerInterval);
-
-            timerInterval = setInterval(() => {
-                seconds--;
-                const m = Math.floor(seconds / 60).toString().padStart(2, '0');
-                const s = (seconds % 60).toString().padStart(2, '0');
-                timerEl.innerText = `${m}:${s}`;
-
-                if (seconds <= 0) {
-                    clearInterval(timerInterval);
-                    timerEl.innerText = "EXPIRED";
-                }
-            }, 1000);
-        }
-
-        // ================= ACCOUNT DETAIL MODAL HANDLERS =================
-        function openAccountDetailModal(accId) {
-            const acc = accountsData.find(a => a.id === accId);
-            if (!acc) return;
-
-            document.getElementById('acc-detail-img').src = acc.img;
-            document.getElementById('acc-detail-game').innerText = acc.gameCategory;
-            document.getElementById('acc-detail-title').innerText = acc.title;
-            document.getElementById('acc-detail-price').innerText = `Rp ${acc.price.toLocaleString('id-ID')}`;
-
-            const specsBox = document.getElementById('acc-detail-specs');
-            specsBox.innerHTML = acc.specs.map(s => `<div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> <span>${s}</span></div>`).join('');
-
-            const waMsg = `Halo Admin Alif Cimol, saya tertarik ingin membeli Akun ID: *${acc.id}* (${acc.title}) seharga Rp ${acc.price.toLocaleString('id-ID')}. Apakah masih ready?`;
-            document.getElementById('acc-buy-wa-btn').href = `https://wa.me/6285117798661?text=${encodeURIComponent(waMsg)}`;
-
-            document.getElementById('account-detail-modal').classList.remove('hidden');
-            lucide.createIcons();
-        }
-
-        function closeAccountDetailModal() {
-            document.getElementById('account-detail-modal').classList.add('hidden');
-        }
-
-        // ================= TITIP JUAL MODAL HANDLERS =================
-        function openTitipJualModal() {
-            document.getElementById('titip-jual-modal').classList.remove('hidden');
-        }
-
-        function closeTitipJualModal() {
-            document.getElementById('titip-jual-modal').classList.add('hidden');
-        }
-
-        function handleTitipJualSubmit(e) {
-            e.preventDefault();
-            closeTitipJualModal();
-            showToast('Form Titip Jual berhasil dikirim! Admin akan kontak WA kamu.', 'success');
-        }
-
-        // ================= CEK INVOICE LOOKUP SIMULATOR =================
-        function cekInvoiceStatus() {
-            const input = document.getElementById('invoice-input').value.trim();
-            const resultCard = document.getElementById('invoice-result-card');
-
-            if (!input) {
-                showToast('Masukkan ID Invoice terlebih dahulu!', 'warning');
-                return;
-            }
-
-            resultCard.classList.remove('hidden');
-            resultCard.innerHTML = `
-                <div class="flex items-center justify-between border-b border-brand-500/20 pb-3">
-                    <div>
-                        <div class="text-xs text-slate-400">Nomor Invoice:</div>
-                        <div class="font-mono font-bold text-white text-sm">${input.toUpperCase()}</div>
-                    </div>
-                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold flex items-center gap-1">
-                        <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> LUNAS / SUKSES
-                    </span>
-                </div>
-                <div class="space-y-1.5 text-xs text-slate-300">
-                    <div class="flex justify-between"><span>Produk:</span> <strong class="text-white">Mobile Legends - 706 Diamonds</strong></div>
-                    <div class="flex justify-between"><span>Tujuan ID:</span> <strong class="text-white">12345678 (2024)</strong></div>
-                    <div class="flex justify-between"><span>Waktu Transaksi:</span> <strong class="text-white">28 Okt 2026, 19:42 WIB</strong></div>
-                    <div class="flex justify-between"><span>Status Item:</span> <span class="text-emerald-400 font-bold">Terikirim ke In-Game Mail</span></div>
-                </div>
-            `;
-            lucide.createIcons();
-            showToast('Data transaksi ditemukan!', 'success');
-        }
-
-        // Copy Clipboard Helper
-        function copyToClipboard(elementId) {
-            const text = document.getElementById(elementId).innerText;
-            const tempInput = document.createElement('input');
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-            showToast('Kode berhasil disalin ke clipboard!', 'success');
-        }
-
-        // Initial Initialization on DOM Load
-        window.onload = function() {
-            renderGames();
-            renderAccounts('ALL');
-        };
-    </script>
-</body>
-</html>
+    <div id="titip-jual-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items
