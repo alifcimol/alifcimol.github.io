@@ -154,7 +154,7 @@ details summary{cursor:pointer;list-style:none}details summary::-webkit-details-
   </section>
 </main>
 
-<footer class="border-t border-brand-500/20 py-8 text-center text-xs text-slate-500">© 2026 Alif Cimol Store. Top Up & Rekber Akun Game.</footer>
+<footer class="border-t border-brand-500/20 py-8 text-center text-xs text-slate-500">© 2026 Alif Cimol Store. Top Up & Rekber Akun Game. <span class="opacity-40">v5</span></footer>
 
 <script>
 const WA = '6285117798661';
@@ -180,12 +180,12 @@ const games = [
     items: [['475 VP',60000],['1000 VP',120000],['2050 VP',240000]] }
 ];
 const accounts = [
-  { cat: 'MLBB', title: 'Akun MLBB Mythic #01', desc: 'Mythic Glory, 120+ skin, 3 skin Epic Legend', price: 1500000, foto: 'foto/akun1.jpg' },
-  { cat: 'MLBB', title: 'Akun MLBB Sultan #02', desc: 'Mythic Honor, 200+ hero & skin langka', price: 3200000, foto: 'foto/akun2.jpg' },
-  { cat: 'FF', title: 'Akun FF Sultan Evo Max', desc: 'Level 70, Evo Gun lengkap, bundle langka', price: 1200000, foto: 'foto/akun3.jpg' },
-  { cat: 'FF', title: 'Akun FF Rare Bundle', desc: 'Bundle Ninja & Cobra, elite pass lama', price: 650000, foto: 'foto/akun4.jpg' },
-  { cat: 'GENSHIN', title: 'Akun Genshin AR 60', desc: 'Nahida C0, Raiden C1, sudah Spiral Abyss 36', price: 2100000, foto: 'foto/akun5.jpg' },
-  { cat: 'VALORANT', title: 'Akun Valorant Skin Reaver', desc: 'Reaver Vandal, Prime Phantom, rank Immortal', price: 1800000, foto: 'foto/akun6.jpg' }
+  { cat: 'MLBB', title: 'Akun MLBB Mythic #01', desc: 'Mythic Glory, 120+ skin, 3 skin Epic Legend', price: 1500000, foto: 'akun1.jpg' },
+  { cat: 'MLBB', title: 'Akun MLBB Sultan #02', desc: 'Mythic Honor, 200+ hero & skin langka', price: 3200000, foto: 'akun2.jpg' },
+  { cat: 'FF', title: 'Akun FF Sultan Evo Max', desc: 'Level 70, Evo Gun lengkap, bundle langka', price: 1200000, foto: 'akun3.jpg' },
+  { cat: 'FF', title: 'Akun FF Rare Bundle', desc: 'Bundle Ninja & Cobra, elite pass lama', price: 650000, foto: 'akun4.jpg' },
+  { cat: 'GENSHIN', title: 'Akun Genshin AR 60', desc: 'Nahida C0, Raiden C1, sudah Spiral Abyss 36', price: 2100000, foto: 'akun5.jpg' },
+  { cat: 'VALORANT', title: 'Akun Valorant Skin Reaver', desc: 'Reaver Vandal, Prime Phantom, rank Immortal', price: 1800000, foto: 'akun6.jpg' }
 ];
 const testi = [
   ['Rizky_MLBB', 'Top up diamond masuk cepet banget, admin ramah. Langganan di sini terus.'],
@@ -228,7 +228,7 @@ function renderAccounts() {
   const list = accounts.map((a, i) => ({ a, i })).filter(x => curCat === 'ALL' || x.a.cat === curCat);
   $('account-grid').innerHTML = list.length ? list.map(({ a, i }) => `
     <div class="rounded-2xl overflow-hidden bg-cardbg border border-brand-500/20 flex flex-col">
-      <div class="h-56 bg-gradient-to-br from-brand-900 to-slate-900 relative">${logo(a.cat, 'h-full text-3xl')}${a.foto ? `<img src="${a.foto}" alt="${a.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">` : ''}<span class="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-600/40 border border-brand-500/40">${a.cat}</span></div>
+      <div class="h-56 bg-gradient-to-br from-brand-900 to-slate-900 relative">${logo(a.cat, 'h-full text-3xl')}${a.foto ? `<img src="${a.foto}?v=5" alt="${a.title}" class="absolute inset-0 w-full h-full object-cover" onerror="if(!this.dataset.r){this.dataset.r=1;this.src='foto/'+this.getAttribute('src').split('?')[0]}else{this.remove()}">` : ''}<span class="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-600/40 border border-brand-500/40">${a.cat}</span></div>
       <div class="p-4 flex-1 flex flex-col gap-2">
         <div class="font-bold">${a.title}</div>
         <p class="text-xs text-slate-400 flex-1">${a.desc}</p>
